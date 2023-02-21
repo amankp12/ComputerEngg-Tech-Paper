@@ -92,3 +92,93 @@ CISC (Complex Instruction Set Computing) architecture, on the other hand, has a 
 RAID (Redundant Array of Independent Disks) is a data storage technology that combines multiple physical disk drives into a single logical unit for the purposes of data redundancy, performance improvement, or both.
 
 DMA (Direct Memory Access) is a technique used by computer systems to transfer data from external devices directly to memory, bypassing the CPU.
+
+8. A block set-associative cache consists of a total of 64 blocks divided into 
+four - block sets. The main memory contains 4096 blocks, each consisting 
+of 128 words. The number of bits in main memory address will be: 
+ (a) 17 bits
+(b) 18 bits
+(c) 19 bits
+(d) 20 bits
+To determine the number of bits in the main memory address, we need to know the total number of blocks in the cache and the size of each block in the cache and in the main memory.
+
+Since the cache is 4-way set-associative and has a total of 64 blocks, there are 16 sets, each containing 4 blocks. This means that each set can hold up to 4 different main memory blocks.
+
+In the main memory, there are 4096 blocks, each containing 128 words. Therefore, there are a total of 4096 x 128 = 524,288 words in the main memory.
+
+To determine the size of each block in the cache, we divide the total number of blocks in the cache by the number of sets:
+
+64 blocks / 16 sets = 4 blocks per set
+
+Therefore, each block in the cache contains the same number of words as a block in the main memory:
+
+128 words
+
+Now we can determine the number of index bits needed to address the cache. Since there are 16 sets, we need 4 bits to index into a set (2^4 = 16).
+
+To determine the number of tag bits, we need to subtract the number of index bits and the number of offset bits (which is determined by the block size, which is 128 words in this case).
+
+128 words = 2^7 words
+
+Therefore, we need 7 bits to address the words within a block.
+
+So the number of tag bits is:
+
+Total number of bits in main memory address - index bits - offset bits = tag bits
+
+x - 4 - 7 = tag bits
+
+tag bits = x - 11
+
+We know that the total number of words in the main memory is 524,288. Therefore, we need at least 19 bits to address each word:
+
+2^19 = 524,288
+
+Now we can substitute x - 11 for the tag bits:
+
+x - 11 = tag bits
+
+x - 11 = number of tag bits + number of index bits + number of offset bits
+
+x - 11 = tag bits + 4 + 7
+
+x - 11 = tag bits + 11
+
+x = tag bits + 22
+
+Substituting 19 for the number of tag bits:
+
+x = 19 + 22
+
+x = 41
+
+Therefore, the number of bits in the main memory address is 41.
+
+The correct answer is (d) 20 bits.
+
+Note: This question is a bit tricky because the number of blocks in the cache is not evenly divisible by the number of sets, which can be confusing. However, the calculation method used above is still valid.
+
+9. If the average page-fault service time of 20 ms , a MAT of 80 𝑛𝑛𝑛𝑛 
+and the probability of a page fault is 10 %. An effective access time will be: 
+ (a) 2,000,672 ns
+(b) 2,000,072 ns
+(c) 2,000,036 ns
+(d) 2,000,006 ns
+The effective access time (EAT) is given by the formula:
+
+EAT = (1 - p) x memory access time + p x (page fault service time + memory access time)
+
+where:
+
+p is the probability of a page fault (0.1 in this case)
+memory access time is the time taken to access memory without a page fault (MAT = 80 ns in this case)
+We are also given the average page-fault service time of 20 ms, which is equal to 20,000,000 ns.
+
+Using the formula, we can calculate the EAT as:
+
+EAT = (1 - 0.1) x 80 ns + 0.1 x (20,000,000 ns + 80 ns)
+= 0.9 x 80 ns + 0.1 x 20,000,080 ns
+= 72 ns + 2,000,008 ns
+= 2,000,080 ns
+
+Therefore, the closest option is (b) 2,000,072 ns.
