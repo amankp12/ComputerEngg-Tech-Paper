@@ -137,19 +137,12 @@ We know that the total number of words in the main memory is 524,288. Therefore,
 Now we can substitute x - 11 for the tag bits:
 
 x - 11 = tag bits
-
 x - 11 = number of tag bits + number of index bits + number of offset bits
-
 x - 11 = tag bits + 4 + 7
-
 x - 11 = tag bits + 11
-
 x = tag bits + 22
-
 Substituting 19 for the number of tag bits:
-
 x = 19 + 22
-
 x = 41
 
 Therefore, the number of bits in the main memory address is 41.
@@ -1413,6 +1406,7 @@ by all processing units?
 (b) 𝑆IMD
 (c) 𝑀ISD
 (d) 𝑀IMD
+
 (c) MISD (Multiple Instruction Single Data) parallel computers execute multiple instructions simultaneously on the same data stream. In contrast, SIMD (Single Instruction Multiple Data) parallel computers execute the same instruction simultaneously on multiple data streams.
 
 Therefore, option (c) 𝑀ISD is the correct answer as it executes the same instruction synchronously by all processing units. In 𝑀ISD machines, multiple processing units execute the same instruction stream, but each unit operates on different data. Examples of 𝑀ISD architectures include the Illiac IV and the STARAN.
@@ -1421,7 +1415,7 @@ Option (a) 𝑆SID (Single Instruction Single Data) and option (b) 𝑆IMD (Sing
 
 99. The ratio of time taken by single processor system and that taken by a 
 parallel processing system is called: 
- (a) Efficiency
+(a) Efficiency
 (b) Speed up
 (c) Throughput
 (d) Turnaround time
