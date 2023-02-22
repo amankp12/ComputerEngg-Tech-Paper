@@ -1172,3 +1172,172 @@ The interface suitable for development work in high-performance server clusters 
 (d) MPI (Message-Passing Interface)
 
 MPI is a standardized message-passing system that enables the development of parallel applications that can run on a wide range of distributed computing platforms, including high-performance server clusters. It provides a flexible and efficient communication interface that can handle advanced features such as buffering and synchronization, making it a popular choice for developing parallel and distributed computing applications. RPC and Berkeley Socket Interface are other communication interfaces that can be used in distributed systems, but they are not specifically designed for high-performance server clusters or advanced features such as buffering and synchronization. XTI (Open Transport Interface) is a legacy networking interface that is no longer widely used.
+
+81. A distributed service that allows distributed processes to coordinate with 
+each other through a shared hierarchical name space of data registers is 
+known as: 
+(a) Oozie
+(b) Mahout 
+(c) ZooKeeper
+(d) Sqoop
+The correct answer is (c) ZooKeeper.
+
+ZooKeeper is a distributed coordination service that allows distributed processes to coordinate with each other through a shared hierarchical name space of data registers, called znodes. It provides a centralized service for maintaining configuration information, naming, providing distributed synchronization, and group services in a distributed environment. ZooKeeper is often used in distributed systems such as Apache Hadoop, Apache Kafka, and Apache Storm.
+
+Oozie is a workflow scheduler system to manage Apache Hadoop jobs.
+
+Mahout is a library of machine learning algorithms for Apache Hadoop.
+
+Sqoop is a tool designed to transfer data between Hadoop and relational databases or mainframes.
+
+82. Which one of the following filters is a space-efficient probabilistic data 
+structure used to test whether an element is a member of a set or not? 
+ (a) Flajolet filter 
+(b) 𝐷GIM filter
+(c) Bloom filter
+(d) High Pass filter
+The filter that is a space-efficient probabilistic data structure used to test whether an element is a member of a set or not is the Bloom filter. Therefore, the correct option is (c) Bloom filter.
+
+The Flajolet filter and DGIM filter are not used for set membership testing. The Flajolet filter is used for approximating the cardinality of a set or the distinct count of elements in a stream, while DGIM filter is used for approximate counting of ones in a sliding window of a binary stream.
+
+The High Pass filter is a signal processing filter used to pass high-frequency components of a signal and attenuate low-frequency components.
+
+83. In Big Data Analysis, an algorithm for finding the frequent itemsets which is 
+effort-intensive both with space and time is: 
+ (a) Page Rank algorithm
+(b) Trust Rank algorithm
+(c) Apriori algorithm
+(d) 𝑆𝑆𝑆𝑆𝑆𝑆 algorithm
+The algorithm for finding frequent itemsets that is effort-intensive both in terms of space and time in Big Data Analysis is the Apriori algorithm.
+
+The Apriori algorithm is a classical algorithm for frequent itemset mining, which involves generating a list of candidate itemsets and then scanning the dataset multiple times to determine the support of each candidate itemset. It uses a "bottom-up" approach to incrementally generate candidate itemsets by combining smaller itemsets.
+
+However, as the number of items and itemsets grows, the number of candidate itemsets also increases exponentially, leading to a combinatorial explosion. This makes the Apriori algorithm computationally expensive and requires a significant amount of memory to store candidate itemsets.
+
+Therefore, despite its popularity and effectiveness, the Apriori algorithm can become impractical for large datasets or datasets with many items. In such cases, other algorithms such as FP-growth may be more suitable for frequent itemset mining.
+
+84. A process of discovering the natural grouping(s) of a set of patterns, points, 
+or objects based on a distance measure on that space is known as: 
+(a) Classifying
+(b) Searching
+(c) Matching
+(d) Clustering
+
+(d) Clustering is the process of discovering the natural grouping(s) of a set of patterns, points, or objects based on a distance measure on that space. Clustering is an unsupervised learning method, where the algorithm tries to find patterns in the data without any prior knowledge or guidance about what those patterns might be. Clustering algorithms are commonly used in data mining, machine learning, and image processing.
+
+85. An algorithm that divides the entire file of baskets into segments small 
+enough so that all frequent itemsets for the segment can be found in main 
+memory is: 
+(a) 𝑃CY algorithm
+(b) The 𝑆ON algorithm
+(c) The Toivonen’s algorithm
+(d) The Randomized algorithm
+The algorithm that divides the entire file of baskets into segments small enough so that all frequent itemsets for the segment can be found in main memory is the SON (Sparse Overlapping Neighborhoods) algorithm.
+
+Option (b) The 𝑆ON algorithm is the correct answer.
+
+Option (a) 𝑃CY algorithm is used for generating frequent itemsets by using candidate generation and pruning methods.
+
+Option (c) Toivonen's algorithm is a sampling-based algorithm that uses a random sample of the data to approximate frequent itemsets with a specified error bound.
+
+Option (d) Randomized algorithm is a broad term that refers to an algorithm that uses a random number generator to make decisions. It is not specific to frequent itemset mining.
+
+86. Which one of the following is not a type of Contexts in Context-aware 
+Computing? 
+(a) Structural Context
+(b) Mechanical Context
+(c) Temporal Context
+(d) User Context
+(b) Mechanical Context is not a type of Contexts in Context-aware Computing.
+
+Context-aware computing uses sensors, data analysis, and machine learning to detect and respond to the context of the user or the environment. There are various types of contexts in context-aware computing, including:
+
+(a) Structural Context: It includes information about the physical structure of the environment, such as the location, size, and layout of objects.
+
+(c) Temporal Context: It includes information about the time, such as the day of the week, the time of day, and the duration of an event.
+
+(d) User Context: It includes information about the user, such as their preferences, interests, behavior, and social context.
+
+Mechanical context does not fit into any of the above categories and is not recognized as a type of context in context-aware computing.
+
+87. Which one of the following is not a cellular Architectural approach? 
+(a) Cell Splitting
+(b) Cell Breathing
+(c) Cell Sectoring
+(d) Reuse partitioning
+The correct answer is (d) Reuse partitioning.
+
+Cell Splitting, Cell Breathing, and Cell Sectoring are all cellular architectural approaches commonly used in cellular network design to improve network capacity, coverage, and quality of service.
+
+Cell Splitting refers to dividing a single cell into multiple smaller cells, thereby increasing the number of cells in a given area and reducing the coverage area of each cell.
+
+Cell Breathing involves dynamically adjusting the coverage area of a cell based on the number of users in the cell. During periods of low usage, the cell coverage area is expanded to cover a larger area, while during periods of high usage, the cell coverage area is contracted to cover a smaller area, thereby increasing the capacity of the cell.
+
+Cell Sectoring involves dividing a cell into multiple sectors or directional antennas, each covering a smaller area. This helps to reduce interference and increase capacity in the cell.
+
+Reuse Partitioning, on the other hand, refers to the frequency reuse pattern used in a cellular network, which is not a cellular architectural approach. It involves dividing the available frequency spectrum into a set of frequency channels, and reusing these channels across different cells to increase the network capacity.
+
+88. Which of the following are Radio propagation mechanisms? 
+1. Reflection and transmission
+2. Scattering
+3. Diffraction
+ (a) 1 and 2 only
+(b) 1, 2 and 3
+(c) 1 and 3 only
+(d) 2 and 3 only
+All three options, reflection and transmission, scattering, and diffraction, are radio propagation mechanisms. Therefore, the correct answer is (b) 1, 2 and 3.
+
+Reflection and transmission refer to the phenomenon where radio waves bounce off or pass through different materials, respectively. Scattering occurs when radio waves encounter small objects or irregularities in the propagation medium, causing the waves to scatter in various directions. Diffraction happens when radio waves bend around obstacles, such as buildings or hills, and spread out into the shadow zones behind them.
+
+89. Which one of the following layers is not an Open System Interconnection 
+(𝑂SI) layer? 
+(a) Data link layer
+(b) Transport layer
+(c) Presentation layer
+(d) Direction layer
+The correct answer is (d) Direction layer.
+
+The Open System Interconnection (OSI) model is a conceptual model that characterizes and standardizes the communication functions of a telecommunication or computing system. The OSI model is divided into seven layers, each of which is responsible for a specific aspect of network communication. These layers are:
+
+Physical layer
+Data link layer
+Network layer
+Transport layer
+Session layer
+Presentation layer
+Application layer
+There is no "Direction layer" in the OSI model, so (d) is the correct answer.
+
+90. If the transmitter and receiver in a 𝑊LAN operating at 2.4 𝐺Hz are 
+separated by a distance of 50 𝑚 , and the power transmitted by the 
+transmitter is 10 𝑑Bm. The received power considering free-space 
+propagation and Omni-directional antennas at both ends will be nearly: 
+(a) −72 𝑑Bm
+(b) −64 𝑑Bm
+(c) −56 𝑑Bm
+(d) −52 𝑑Bm
+The received power considering free-space propagation can be calculated using the Friis transmission equation, which relates the transmitted power, the distance between the transmitter and receiver, and the gains of the antennas:
+
+𝑃ᵣ = 𝑃ₜ + 𝐺ₜ + 𝐺ᵣ − 20 log₁₀(𝑑/𝑑₀)
+
+where:
+𝑃ᵣ is the received power
+𝑃ₜ is the transmitted power (in dBm)
+𝐺ₜ is the transmitter antenna gain
+𝐺ᵣ is the receiver antenna gain
+𝑑 is the distance between the transmitter and receiver
+𝑑₀ is the reference distance, which is typically taken as 1 meter for free-space propagation
+
+In this case, 𝑃ₜ = 10 dBm, 𝑑 = 50 m, 𝐺ₜ = 𝐺ᵣ = 0 (omni-directional antennas), and 𝑑₀ = 1 m. Substituting these values into the equation, we get:
+
+𝑃ᵣ = 10 + 0 + 0 - 20 log₁₀(50/1) = −72 dBm
+
+Therefore, the received power considering free-space propagation and omni-directional antennas at both ends will be approximately -72 dBm, which corresponds to option (a).
+
+91. A NETCONF client that provides a command line interface for interacting 
+with the Netopeer-server is:
+ (a) Netopeer-manager 
+(b) Netopeer-configurator 
+(c) Netopeer-cli
+(d) Netopeer-server
+(c) Netopeer-cli is a NETCONF client that provides a command line interface for interacting with the Netopeer-server. Netopeer-manager is a graphical user interface (GUI) for managing NETCONF devices, while Netopeer-configurator is a tool for generating and managing NETCONF server configuration files. Netopeer-server is a NETCONF server implementation.
