@@ -182,3 +182,426 @@ EAT = (1 - 0.1) x 80 ns + 0.1 x (20,000,000 ns + 80 ns)
 = 2,000,080 ns
 
 Therefore, the closest option is (b) 2,000,072 ns.
+
+10. For a bus frequency of 100 MHz and with data being transferred at 64 bits
+at a time. The DDR SDRAM gives a transfer rate of: 
+(a) 800 MB/S
+(b) 1600 MB/S
+(c) 3200 MB/S
+(d) 6400 MB/S
+The DDR SDRAM (Double Data Rate Synchronous Dynamic Random-Access Memory) transfers data on both the rising and falling edges of the clock signal, which effectively doubles the transfer rate compared to SDR SDRAM. Therefore, for a 100 MHz bus frequency and data being transferred at 64 bits at a time, the effective transfer rate of DDR SDRAM can be calculated as:
+
+Transfer rate = Bus frequency x Data width x 2
+
+Substituting the given values, we get:
+
+Transfer rate = 100 MHz x 64 bits x 2 = 12.8 GB/s
+
+However, the question asks for the transfer rate in MB/s, so we need to convert GB/s to MB/s:
+
+Transfer rate = 12.8 GB/s = 12800 MB/s
+
+Therefore, the correct answer is (c) 3200 MB/S.
+
+11. A computer company wants to hire 25 programmers to handle systems
+programming jobs and 40 programmers for applications programming. 
+Of those hired, 10 will be expected to perform jobs of both types, 
+the number of programmers hired must be: 
+ (a) 40
+(b) 45
+(c) 50
+(d) 55
+The company needs to hire 25 programmers for systems programming and 40 programmers for applications programming. However, 10 programmers will be expected to perform both types of jobs.
+
+To calculate the total number of programmers needed, we need to add the number of programmers required for each type of job and then subtract the number of programmers who will perform both types of jobs, as they have already been counted in both categories.
+
+Total programmers needed = (25 + 40) - 10
+Total programmers needed = 55 - 10
+Total programmers needed = 45
+
+Therefore, the number of programmers the company needs to hire is 45.
+
+Option (b) is the correct answer.
+
+12. A Hamming code can correct all combinations of 𝑘 or fewer errors if and 
+only if the minimum distance between any two code words is at least: 
+ (a) 𝑘 + 1
+(b) 𝑘 − 1
+(c) 2𝑘 + 1
+(d) 2𝑘 − 1
+The minimum distance of a code, denoted as d, is the smallest Hamming distance between any two distinct codewords in the code. A Hamming code with codeword length n and message length k is a linear error-correcting code that has a minimum distance of 3.
+
+In general, a code can correct up to t errors if and only if its minimum distance is at least 2t + 1. Therefore, a Hamming code of length n and message length k can correct all combinations of k or fewer errors if and only if its minimum distance is at least 2k + 1.
+
+Therefore, the correct answer is (c) 2𝑘 + 1.
+
+13. If the time is now 4 𝑜𝑜’clock, the time 101 ℎ𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜 from now will be: 
+ (a) 8 𝑜𝑜’clock
+(b) 9 𝑜𝑜’clock
+(c) 10 𝑜𝑜’clock
+(d) 11 𝑜𝑜’clock
+Since 101 hours is greater than 24 hours, we need to convert it to days and hours.
+
+101 hours is equal to 4 days and 5 hours (since 24 hours make one day).
+
+Adding 4 days and 5 hours to the current time of 4 o'clock gives us:
+
+4 o'clock + 4 days + 5 hours = 9 o'clock
+
+Therefore, the time 101 hours from now will be (b) 9 o'clock.
+
+14. A statement that can be either true or false, depending on the truth values of 
+its propositional variables is called: 
+(a) Contradiction
+(b) Tautology
+(c) Absurdity
+(d) Contingency
+The statement that can be either true or false, depending on the truth values of its propositional variables is called a contingency.
+
+Option (d) is the correct answer.
+
+A contradiction is a statement that is always false, regardless of the truth values of its propositional variables.
+
+A tautology is a statement that is always true, regardless of the truth values of its propositional variables.
+
+An absurdity is a statement that does not make sense or is nonsensical.
+
+15. Which one of the following algorithms is designed by Ford and Fulkerson? 
+(a) The labeling algorithm
+(b) The matching algorithm
+(c) The line drawing algorithm
+(d) The edge detection algorithm
+The algorithm designed by Ford and Fulkerson is the "labeling algorithm" for computing the maximum flow in a network. Therefore, the answer is (a) The labeling algorithm.
+
+16. In Object-Oriented Programming using C++, static variable is also known 
+as: 
+ (a) Object variable
+(b) Class variable
+(c) Stored variable
+(d) Global variable
+The correct answer is (b) Class variable.
+
+In Object-Oriented Programming using C++, a static variable is declared with the "static" keyword and it belongs to the class rather than to any specific object or instance of the class. Therefore, it is also called a class variable.
+
+Unlike non-static member variables, static variables have only one copy that is shared by all instances of the class. They can be accessed using the class name and the scope resolution operator (::). Static variables are initialized only once and their values persist across multiple function calls.
+
+Object variables are non-static member variables that belong to each instance of the class separately. Stored variable is not a commonly used term in C++ programming. Global variables are declared outside of any class or function and can be accessed from any part of the program, unlike static variables which are limited to the class scope.
+
+17. Which one of the following types of class is not used to create objects? 
+ (a) Anonymous class
+(b) Nested class
+(c) Base class
+(d) Abstract class
+(c) Base class is not used to create objects. A base class is typically used as a template or a blueprint for creating derived classes. Derived classes inherit the properties and behaviors of the base class, but the base class itself cannot be instantiated into an object.
+
+On the other hand, anonymous classes, nested classes, and abstract classes can all be used to create objects. Anonymous classes are defined and instantiated in a single expression, often used for small implementations of interfaces or abstract classes. Nested classes are defined within another class and can be used to logically group related code. Abstract classes are used to provide a template for derived classes and can have abstract methods that must be implemented by any derived class.
+
+18. The function call 𝑨.max( ) will set the pointer this to the: 
+ (a) Contents of the object 𝐴
+(b) Address of the object 𝐴
+(c) Address of the function max
+(d) Address of the first argument of function max
+(a) Contents of the object 𝐴
+
+When the function call 𝑨.max( ) is made, it invokes the max() method of the object 𝐴. Within the max() method, the this pointer refers to the object 𝐴 itself. Therefore, setting the this pointer to the contents of the object 𝐴 allows the max() method to access the data members and member functions of the object 𝐴.
+
+19. A class which can inherit the attributes of two or more classes is called: 
+(a) Hierarchical Inheritance 
+(b) Multilevel Inheritance 
+(c) Multiple Inheritance 
+(d) Hybrid Inheritance
+
+(c) Multiple Inheritance
+
+20. Which one of the following statements is true with respect to Virtual 
+Functions? 
+(a) These cannot be static members 
+(b) They cannot be friend of another class 
+(c) They cannot be accessed by using object pointers
+(d) One can have virtual constructors, but cannot have virtual destructors
+(a) These cannot be static members
+
+This statement is true. Virtual functions are used to achieve runtime polymorphism in C++. They are declared in the base class with the virtual keyword and are implemented in the derived classes. Virtual functions cannot be declared as static because static functions are not bound to any object, and virtual functions require an object for dynamic dispatch to the correct function implementation.
+
+(b) They cannot be friend of another class
+
+This statement is false. Virtual functions can be declared as friends of another class. Friend functions are not members of a class, so they do not participate in dynamic dispatch. Therefore, making a function virtual or not does not affect whether it can be declared as a friend of another class.
+
+(c) They cannot be accessed by using object pointers
+
+This statement is false. Virtual functions can be accessed using object pointers. In fact, virtual functions are usually called using pointers to base class objects, which allows dynamic dispatch to the correct function implementation in the derived class.
+
+(d) One can have virtual constructors, but cannot have virtual destructors
+
+This statement is false. C++ does not allow virtual constructors. Constructors are used to create and initialize objects, and their behavior is determined at compile-time based on the class being constructed. On the other hand, destructors are used to destroy objects, and they are called automatically when an object goes out of scope or is explicitly deleted. Destructors can be declared as virtual, which allows the destructor of the most derived class to be called when deleting an object through a pointer to the base class.
+
+21. In a depth-first search of an undirected graph 𝐺𝐺, every edge of 𝐺𝐺 is: 
+(a) Either a tree edge or a back edge
+(b) Either a forward edge or a cross edge
+(c) Either a left edge or a right edge
+(d) Either a front edge or a parallel edge
+In a depth-first search of an undirected graph 𝐺𝐺, every edge of 𝐺𝐺 is either a tree edge or a back edge.
+
+Explanation:
+
+In depth-first search (DFS), the edges in a graph are classified into four types: tree edges, back edges, forward edges, and cross edges.
+
+However, in an undirected graph, there are no forward edges or cross edges since there is no directionality to the edges. Therefore, only tree edges and back edges are present in the DFS of an undirected graph.
+
+Tree edges are the edges that are explored during the DFS and form a tree-like structure. Back edges are edges that connect a vertex to an ancestor in the DFS tree.
+
+Thus, option (a) is the correct answer.
+
+22. The time required to perform a sequence of data structure operations is 
+averaged over all the operations performed is called: 
+(a) Average case analysis 
+(b) Amortized analysis
+(c) Performance analysis
+(d) Best case analysis
+
+(b) Amortized analysis
+
+23. Which algorithm solves the single-source shortest-paths problem in the 
+general case in which edge weights may be negative? 
+ (a) Dijkstra algorithm
+(b) Bellman-Ford algorithm
+(c) Ford-Fulkerson algorithm
+(d) Prim algorithm
+The algorithm that solves the single-source shortest-paths problem in the general case in which edge weights may be negative is the Bellman-Ford algorithm. Therefore, the correct answer is (b).
+
+The Bellman-Ford algorithm can handle negative edge weights and is slower than Dijkstra's algorithm. It works by relaxing edges repeatedly and computing the shortest path from the source vertex to all other vertices in the graph. It can also detect negative weight cycles in the graph, which is not possible with Dijkstra's algorithm.
+
+Dijkstra's algorithm, on the other hand, is suitable for non-negative edge weights and is faster than the Bellman-Ford algorithm. It works by maintaining a set of vertices whose shortest path from the source vertex is known and expanding this set one vertex at a time.
+
+The Ford-Fulkerson algorithm is used for finding the maximum flow in a network flow problem, while the Prim algorithm is used for finding the minimum spanning tree of a graph.
+
+24. Which of the following statements are correct regarding asymptotic 
+notation?
+1. 𝑂-notation provides an asymptotic upper bound on a function
+2. Ω- notation provides an asymptotic lower bound on a function
+3. 𝜃- notation provides an asymptotic lower bound on a function
+(a) 1 and 2 only
+(b) 1 and 3 only
+(c) 2 and 3 only
+(d) 1, 2 and 3
+The correct statements regarding asymptotic notation are:
+
+𝑂-notation provides an asymptotic upper bound on a function
+Ω- notation provides an asymptotic lower bound on a function
+Therefore, the correct answer is (a) 1 and 2 only.
+
+Option 3 is incorrect as 𝜃- notation provides an asymptotic tight bound on a function, meaning it provides both asymptotic upper and lower bounds on a function.
+
+25. What is the asymptotic bound for the following recurrence using master 
+theorem method? 
+𝑇(𝑛) = 9𝑇(n/3) + n
+ (a) 𝑇(𝑛) = Θ(𝑛)
+(b) 𝑇(𝑛) = Θ(𝑛^2)
+(c) 𝑇(𝑛) = Θ(𝑛lg𝑛)
+(d) 𝑇(𝑛) = Θ(lg𝑛)
+This recurrence relation can be expressed in the form of the Master Theorem as follows:
+
+T(n) = aT(n/b) + f(n)
+
+where a = 9, b = 3, and f(n) = n.
+
+Comparing f(n) with n^logb(a), we have:
+
+n^logb(a) = n^log3(9) = n^2
+
+Since f(n) = n = Θ(n^1), which is smaller than n^logb(a) for this case, we can conclude that the recurrence relation falls into case 1 of the Master Theorem, which states that:
+
+If f(n) = O(n^c) where c < logb(a), then T(n) = Θ(n^logb(a))
+
+Therefore, the asymptotic bound for the given recurrence relation is:
+
+T(n) = Θ(n^2)
+
+Therefore, the correct option is (b) Θ(n^2).
+
+26. The primary determinant in selecting activities in each iteration of the spiral 
+model of software development is: 
+ (a) Cost
+(b) Iteration size
+(c) Constraints 
+(d) Risk
+
+(d) Risk is the primary determinant in selecting activities in each iteration of the spiral model of software development. The spiral model is a software development process model that combines elements of both the waterfall model and the iterative model. The spiral model emphasizes the importance of risk analysis and management in each iteration. Each iteration involves identifying, analyzing, and mitigating risks before proceeding with the next iteration. This approach allows for a more flexible and adaptable development process that can accommodate changes in requirements and address emerging risks.
+
+27. Which one of the following testing is essentially a set of path test performed 
+to examine the many different paths through the modules? 
+ (a) Integration testing 
+(b) Unit testing
+(c) Function testing
+(d) System testing
+(a) Integration testing and (d) System testing involve testing the interactions between multiple modules or components, rather than just examining individual paths through a single module.
+
+(c) Function testing typically involves testing individual functions or features of a software application to ensure they meet their requirements.
+
+Therefore, the testing method described in the question is (b) Unit testing, which involves testing individual units or modules of code in isolation to ensure they behave as expected along different paths through the code.
+
+28. An approach which is very simple in its philosophy where basically all the 
+modules are constructed and tested independently of each other and when 
+they are finished, they are all put together at same time is: 
+ (a) Top-Down strategy
+(b) Bottom-Up strategy
+(c) Big-Bang strategy
+(d) Breadth-First strategy
+
+(b) Bottom-Up strategy is an approach in which all the modules of a system are constructed and tested independently of each other, and then combined together to form the complete system. This strategy involves starting with the smallest and simplest modules and gradually building up the system by integrating larger and more complex modules. This approach is simple in philosophy and can be effective in identifying and resolving issues with individual modules before they are integrated into the larger system.
+
+29. Capability maturity model in software engineering is a technique which is 
+used to improve the: 
+(a) Testing
+(b) Understanding of the software
+(c) Software process
+(d) Prototype model
+
+(c) Software process
+
+The Capability Maturity Model (CMM) in software engineering is a technique used to improve the software process. It is a framework that helps organizations improve their software development processes and increase the maturity of their software development processes. The model has five levels of maturity, from Level 1 (Initial) to Level 5 (Optimizing), and each level represents a higher degree of process maturity and organizational capability. The CMM helps organizations to identify their strengths and weaknesses in their software development process and provides a roadmap for improvement.
+
+30. A model which enables the developer to apply the prototyping at any stage 
+in evolution of the product and which addresses the risks associated with 
+software development is: 
+(a) Spiral model 
+(b) Prototype model
+(c) Water fall model
+(d) V-shape model
+The correct answer is (b) Prototype model.
+
+The prototype model is a software development model that enables developers to create a preliminary version of a product quickly and efficiently. This model is based on the idea that it is easier to identify and address issues early in the development process than later on.
+
+The prototype model allows developers to apply prototyping at any stage in the evolution of the product. This means that they can create a prototype early in the development process to identify any potential issues or risks, and then continue to refine the prototype as the project progresses.
+
+By addressing risks early in the development process, the prototype model can help to reduce the overall risk associated with software development. This makes it a popular choice for many development teams, particularly those working on complex or large-scale projects.
+
+The spiral model and V-shape model also address risks associated with software development, but they are not specifically designed to enable prototyping at any stage in the evolution of the product. The waterfall model, on the other hand, does not allow for prototyping at all, as it is a sequential process model where each phase must be completed before moving on to the next.
+
+31. The performance of the network is often evaluated by which of the 
+following two networking metrics? 
+(a) Speedup and accuracy
+(b) Throughput and delay
+(c) Speedup and delay
+(d) Throughput and accuracy
+
+(b) Throughput and delay are the two commonly used networking metrics for evaluating network performance.
+
+Throughput refers to the amount of data that can be transmitted over a network in a given amount of time, usually measured in bits per second (bps) or bytes per second (Bps). Throughput is important for applications that require high data transfer rates, such as video streaming, file transfers, and online gaming.
+
+Delay, also known as latency, is the time it takes for a packet of data to travel from its source to its destination. It is usually measured in milliseconds (ms). Delay is critical for real-time applications, such as voice and video conferencing, online gaming, and financial transactions, where even a small delay can cause significant problems.
+
+32. A sine wave is offset 1/6 cycle with respect to time 0. Its phase will be nearly: 
+(a) 1.05 rad
+(b) 0.79 rad
+(c) 0.52 rad
+(d) 0.26 rad
+To find the phase of a sine wave, we need to determine how much of the cycle has elapsed since the wave crossed the zero axis at time 0.
+
+If the wave is offset 1/6 cycle with respect to time 0, then it has already completed 1/6 cycle by the time t=0. Therefore, at any time t, the wave will have completed 1/6 cycle plus an additional fraction of a cycle determined by t.
+
+To calculate this additional fraction, we can use the formula:
+
+θ = 2π * (t/T - n)
+
+where θ is the phase angle in radians, t is the time elapsed since the wave crossed the zero axis at time 0, T is the period of the wave (i.e., the time it takes to complete one cycle), and n is the number of cycles completed by the wave before time 0.
+
+Since the wave is offset by 1/6 cycle, we have n = -1/6. The period of the wave is the time it takes to complete one cycle, which is 2π radians. Therefore, we have:
+
+θ = 2π * (t/(2π) - (-1/6))
+= 2π * (t/(2π) + 1/6)
+= π/3 + t/3
+
+So the phase angle of the wave at time t is π/3 + t/3 radians.
+
+To find the phase angle when t = 1/6 cycle (i.e., the additional fraction of a cycle completed since time 0 is 1/6), we substitute t = (1/6) * 2π into the above equation:
+
+θ = π/3 + (1/3) * (1/6) * 2π
+= π/3 + π/18
+= 0.52 rad
+
+Therefore, the answer is (c) 0.52 rad.
+
+33. If a periodic signal is decomposed into 5 sine waves with frequencies of 
+100 𝐻z, 300 𝐻z, 500 𝐻z, 700 𝐻z and 900 𝐻z, its bandwidth will be: 
+(a) 800 𝐻z
+(b) 700 𝐻z
+(c) 600 𝐻z
+(d) 500 𝐻z
+The bandwidth of a signal is defined as the difference between the highest and lowest frequency components of the signal. In this case, the highest frequency component is 900 Hz and the lowest frequency component is 100 Hz. Therefore, the bandwidth of the signal is:
+
+900 Hz - 100 Hz = 800 Hz
+
+So the answer is (a) 800 Hz.
+
+34. A network with bandwidth of 10 Mbps can pass only an average of 12,000
+frames per minute with each frame carrying an average of 10,000 bits. 
+The throughput of this network will be: 
+ (a) 2 Mbps
+(b) 4 Mbps
+(c) 6 Mbps                                                                                                                                
+(d) 8 Mbps
+To calculate the throughput of the network, we need to use the following formula:
+
+Throughput = Bandwidth * (1 - Network Utilization)
+
+where Network Utilization is the percentage of time that the network is being used.
+
+To find the Network Utilization, we need to first calculate the average frame size and the average time it takes for a frame to be transmitted.
+
+Average Frame Size = 10,000 bits
+
+Transmission Time per Frame = (Average Frame Size) / (Bandwidth) = (10,000 bits) / (10 Mbps) = 0.001 seconds
+
+Next, we can calculate the Network Utilization using the following formula:
+
+Network Utilization = (Number of Frames) * (Transmission Time per Frame) / (1 minute)
+
+Number of Frames = 12,000 frames
+
+Network Utilization = (12,000 frames) * (0.001 seconds/frame) / (60 seconds) = 0.2
+
+Therefore, the Network Utilization is 0.2 or 20%.
+
+Finally, we can calculate the throughput of the network as follows:
+
+Throughput = Bandwidth * (1 - Network Utilization) = 10 Mbps * (1 - 0.2) = 8 Mbps
+
+Therefore, the answer is (d) 8 Mbps.
+
+35. Assume the distance between the sender and the receiver is 12,000 km, 
+the bandwidth of the network is 1Mbps and that light travels at 
+2.4 × 10^8 𝑚/𝑠. The propagation time and the transmission time to transmit 
+5-MB message (an image), will be respectively: 
+(a) 40 ms and 30 𝑠
+(b) 50 𝑚s and 30 𝑠
+(c) 40 ms and 40 𝑠
+(d) 50 ms and 40 s
+The propagation time is the time it takes for a signal to travel from the sender to the receiver. It can be calculated as:
+
+Propagation time = Distance / Speed of light
+
+Propagation time = 12,000 km / (2.4 × 10^8 𝑚/𝑠)
+Propagation time = 0.05 seconds = 50 ms
+
+The transmission time is the time it takes to transmit the 5-MB message at a bandwidth of 1Mbps. It can be calculated as:
+
+Transmission time = Size of message / Bandwidth
+
+Transmission time = (5 MB * 8 bits/byte) / 1 Mbps
+Transmission time = 40 seconds
+
+Therefore, the answer is (c) 40 ms and 40 𝑠.
+
+36. What is MTFF in redundancy for data storage in disks? 
+(a) Middle-time-training-failure
+(b) Mean-time-to-failure
+(c) Mean-time-training-failure
+(d) Middle-training -to-failure
+The correct answer is (b) Mean-time-to-failure (MTTF) in redundancy for data storage in disks.
+
+MTTF is a metric that measures the average time between failures for a particular system or component. In the context of redundancy for data storage in disks, MTTF is an important factor to consider because it helps to determine the reliability of the system.
+
+In a redundant disk storage system, multiple disks are used to store the same data. If one disk fails, the data can still be accessed from the other disks. However, to ensure that the system remains operational, it is important to know the MTTF of each disk and to monitor the disks for any signs of impending failure.
+
+By knowing the MTTF of the disks, the system can be designed to include enough redundancy to ensure that data is always available. For example, if the MTTF of each disk is 50,000 hours, a system with two disks would have a MTTF of approximately 100,000 hours.
