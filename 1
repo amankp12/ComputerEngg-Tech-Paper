@@ -785,3 +785,121 @@ the range of 𝑋𝑡 in the training set is called:
 (d) Friction
 
 (a) Extrapolation
+
+51. The ability to access the capabilities over the network through standard 
+mechanisms that promote use by heterogeneous thin or thick client platform 
+is: 
+(a) On demand service
+(b) Rapid elasticity
+(c) Ubiquitous Network Access
+(d) Location Independent Resource Pooling
+
+(c) Ubiquitous Network Access refers to the ability to access cloud services and capabilities over the network through standard mechanisms that promote use by heterogeneous thin or thick client platforms. This means that users can access cloud resources from anywhere and from any device with internet access. On-demand service, rapid elasticity, and location-independent resource pooling are also characteristics of cloud computing, but they do not specifically refer to the ability to access cloud resources from any device or location.
+
+52. A grouping of services or service components that have specific delivery 
+commitments and roles identified with the customer is: 
+(a) Service Level Agreements 
+(b) Service Level Management 
+(c) Service Level Management Objective
+(d) Services Portfolio
+(a) Service Level Agreements.
+
+Service Level Agreements (SLAs) are formal agreements between a service provider and a customer that define the specific services that will be provided, the level of service that will be delivered, and the responsibilities of both parties. SLAs typically include details such as service availability, performance metrics, response times, and other service-specific commitments. They are used to establish clear expectations and ensure that the services being provided meet the customer's needs.
+
+53. The period of time within which systems, applications or functions must be 
+recovered after an outage is: 
+ (a) Mean Time to Recover
+(b) Recovery Time Objective
+(c) Recovery Point Objective
+(d) Mean Time Return Failure
+
+The period of time within which systems, applications, or functions must be recovered after an outage is referred to as the Recovery Time Objective (RTO).
+
+Therefore, option (b) is the correct answer.
+
+The Mean Time to Recover (MTTR) refers to the average time it takes to repair a system or component after it fails, while the Recovery Point Objective (RPO) refers to the maximum acceptable amount of data loss that an organization can tolerate after a disruption.
+
+Option (d) "Mean Time Return Failure" is not a commonly used term in the context of system recovery.
+
+54. The chargeback scheme where the 𝐼T costs are defined in measurable 
+events, transactions and functions that are relevant to the business and 
+outside the 𝐼T organization is: 
+(a) Resource or usage based 
+(b) Allocation based
+(c) Activity based costing
+(d) Product or service based
+
+The chargeback scheme where the IT costs are defined in measurable events, transactions, and functions that are relevant to the business and outside the IT organization is activity-based costing (ABC).
+
+ABC is a cost accounting method that identifies the activities that a company performs and then assigns the cost of each activity to the products or services that benefit from that activity in proportion to the amount of resources consumed. This allows for a more accurate allocation of IT costs to the specific business units or services that consume them, rather than allocating costs based on a broad, arbitrary metric such as headcount or revenue.
+
+Therefore, the answer is (c) Activity based costing.
+
+55. The use of distributed computing facilities for application requiring large 
+computing power over a long period of time is: 
+(a) High-Performance Computing 
+(b) High-Throughput Computing
+(c) Many Tasks Computing
+(d) Distributed Computing
+The use of distributed computing facilities for application requiring large computing power over a long period of time is typically referred to as High-Throughput Computing (HTC).
+
+HTC involves the execution of many independent tasks in parallel on distributed resources, such as a cluster of computers or a grid computing infrastructure. The goal is to achieve high throughput, or the rate at which tasks can be completed, rather than focusing on high-performance computing (HPC) for a single, computationally intensive task.
+
+Therefore, the answer is (b) High-Throughput Computing.
+
+56. A small change in either the plaintext or the key producing a significant 
+change in the ciphertext is called: 
+(a) Feistel effect 
+(b) Claude Shannon effect
+(c) Bit independence effect
+(d) Avalanche effect
+
+The correct answer is (d) Avalanche effect.
+
+The Avalanche effect is a property of good cryptographic algorithms, where a small change in either the plaintext or the key should produce a significant change in the ciphertext. This means that even a small change in the input or key should cause the output to change drastically, making it difficult for an attacker to deduce any information about the key from the ciphertext.
+
+Feistel effect refers to the structure of a block cipher where the plaintext is divided into two halves and the key is used to transform one half, and then the two halves are combined.
+
+Claude Shannon effect is not a commonly used term in cryptography. Claude Shannon is known as the father of modern cryptography, and he made significant contributions to the field of information theory.
+
+Bit independence effect refers to the property of a cryptographic hash function, where each output bit is independent of every input bit. This means that changing any one bit of the input should change each output bit with a probability of 50%.
+
+57. Finding an effective linear equation between plaintext, ciphertext and the 
+key that holds with probability 𝑝 ≠ 0.5 is the objective of: 
+ (a) Differential Cryptanalysis
+(b) Linear Cryptanalysis
+(c) Brute-Force Attack
+(d) Feistel Analysis
+
+The correct answer is (b) Linear Cryptanalysis.
+
+Linear Cryptanalysis is a cryptanalytic attack that aims to find a linear equation that relates the plaintext, ciphertext, and the key in a cryptosystem. The goal is to find a linear expression that holds with a probability significantly different from 0.5, allowing an attacker to deduce information about the key.
+
+Differential Cryptanalysis, on the other hand, is a cryptanalytic attack that aims to exploit the difference between pairs of plaintext and ciphertext to deduce information about the key.
+
+Brute-Force Attack is a straightforward attack method in which an attacker tries all possible keys until the correct one is found. This method is time-consuming and only feasible for small key spaces.
+
+Feistel Analysis is not a cryptanalytic attack but a design principle for block ciphers. The Feistel structure is a way of constructing a cipher that is based on the repeated application of a function to the plaintext, combined with a key, in a way that provides provable security properties.
+
+58. During the design of 𝑆-boxes used in various cryptographic algorithms, 
+if for a 1-bit input change, at least 𝜋 output bits change, then it satisfies: 
+ (a) Strict avalanche criterion 
+(b) Bit independence criterion
+(c) Permutation criterion
+(d) Guaranteed avalanche criterion
+
+(a) Strict avalanche criterion
+
+59. The block cipher mode of operation used for encryption of stream-oriented 
+transmission over noisy channel is: 
+ (a) Electronic Codebook
+(b) Output Feedback
+(c) Cipher Feedback
+(d) Cipher Block Chaining 
+The block cipher mode of operation that is commonly used for the encryption of stream-oriented transmissions over a noisy channel is the Output Feedback (OFB) mode.
+
+In OFB mode, the encryption process involves generating a stream of key bits, which are then combined with the plaintext using an exclusive OR (XOR) operation to produce the ciphertext. The key stream is generated by encrypting an initialization vector (IV) with the block cipher using the encryption algorithm in Electronic Codebook (ECB) mode. The resulting ciphertext block is then used as the next key stream block.
+
+One of the advantages of using OFB mode is that errors in transmission only affect the corresponding ciphertext block, rather than propagating to subsequent blocks. This makes OFB mode particularly useful in noisy channel environments, where errors and dropouts are common.
+
+Therefore, the correct answer is (b) Output Feedback.
