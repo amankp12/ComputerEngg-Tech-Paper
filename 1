@@ -605,3 +605,183 @@ MTTF is a metric that measures the average time between failures for a particula
 In a redundant disk storage system, multiple disks are used to store the same data. If one disk fails, the data can still be accessed from the other disks. However, to ensure that the system remains operational, it is important to know the MTTF of each disk and to monitor the disks for any signs of impending failure.
 
 By knowing the MTTF of the disks, the system can be designed to include enough redundancy to ensure that data is always available. For example, if the MTTF of each disk is 50,000 hours, a system with two disks would have a MTTF of approximately 100,000 hours.
+
+37. The advantage of using DBMS is that it offers data independence which is 
+achieved through:
+ (a) Data abstraction
+(b) Exceptional handling
+(c) Data hiding 
+(d) Transaction 
+(a) Data abstraction is the technique used by a DBMS to provide data independence.
+
+Data abstraction refers to the process of hiding complex implementation details of the database and providing users with a simplified view of the data. This means that users can interact with the database without needing to know how it is structured or how the data is stored.
+
+Data abstraction provides two levels of abstraction:
+
+Physical level: This level deals with how the data is stored on the disk.
+
+Logical level: This level deals with how the data appears to the users.
+
+By providing this separation of concerns, a DBMS offers data independence, which means that changes made to the physical level do not affect the logical level. Users can interact with the database using the same logical view, regardless of any changes made to the underlying physical storage.
+
+Therefore, the correct answer is (a) Data abstraction.
+
+38. A weak entity can be identified only by considering some of its attributes in 
+conjunction with the: 
+ (a) Total participation
+(b) Primary key of another entity
+(c) Independent entity
+(d) All the attributes of the strong entity
+(b) Primary key of another entity.
+
+A weak entity is an entity that cannot be uniquely identified by its attributes alone. It depends on the existence of a related entity called the owner entity. The primary key of the owner entity is used in conjunction with the weak entity's partial key to identify a particular instance of the weak entity.
+
+Therefore, the identification of a weak entity requires consideration of some of its attributes in conjunction with the primary key of the owner entity. The other options listed in the question are not necessary for identifying a weak entity.
+
+39. Which of the following are the limitations for creating, using and managing 
+decision-support system in a database management system? 
+1. Lack of analytical sophistication
+2. Database layout limitations
+3. Inability to handle or process large amounts of data 
+(a) 1 and 2 only
+(b) 1 and 3 only
+(c) 2 and 3 only
+(d) 1, 2 and 3
+(b) 1 and 3 only.
+
+Explanation:
+
+Lack of analytical sophistication: Decision-support systems (DSS) are designed to help users make decisions based on data analysis. However, some DSS may have limitations in terms of the analytical sophistication they offer. For example, they may only provide basic statistical analysis or lack the ability to perform advanced data modeling.
+
+Database layout limitations: The layout of a database can impact the effectiveness of a DSS. If the database is not designed with the needs of the DSS in mind, it may be difficult to extract the necessary data and generate meaningful insights. However, this is not always a limitation as a well-designed database can enhance DSS operations.
+
+Inability to handle or process large amounts of data: DSS often require large amounts of data to generate meaningful insights. If a database management system (DBMS) cannot handle or process large amounts of data efficiently, it may not be suitable for use with a DSS. This can result in slower response times and potentially inaccurate results.
+
+Therefore, options (a) and (c) are incorrect as they incorrectly include or exclude certain limitations. Option (d) is incorrect as it includes all three limitations, while only options 1 and 3 are correct.
+
+40. The method of accessing the data which uses the search key value 
+transformation to support the efficient retrieval of data entries is known as: 
+(a) Hash-based indexing
+(b) Sequential indexing
+(c) Random indexing
+(d) Direct indexing
+
+(a) Hash-based indexing is the method of accessing the data which uses the search key value transformation to support the efficient retrieval of data entries. In hash-based indexing, a hash function is used to map search keys to indexes of a hash table. This allows for efficient retrieval of data entries based on their search keys.
+
+41. A language 𝐿 is accepted by some 𝜖𝜖-𝑁FA if and only if 𝐿 is accepted by 
+some: 
+ (a) 𝑁FA
+(b) 𝐷FA
+(c) 𝐹SM
+(d) 𝑃DA
+(a) 𝑁FA.
+
+An 𝜖𝜖-𝑁FA (epsilon-NFA) is a non-deterministic finite automaton with epsilon transitions, which means that it can have transitions labeled with the empty string (epsilon) to move between states without reading any input symbol. Any language that can be accepted by an epsilon-NFA can also be accepted by a regular NFA (without epsilon transitions).
+
+Therefore, any language accepted by an epsilon-NFA can also be accepted by a regular NFA, and not necessarily by a DFA, FSM or PDA. Hence, option (a) is the correct answer.
+
+42. If 𝐿𝐿 is a context free language and R is a regular language, then 𝐿𝐿 ∩ 𝑅𝑅 is a: 
+ (a) Regular language
+(b) Non-regular language
+(c) Context sensible language
+(d) Context free language
+The correct answer is (a) Regular language.
+
+The intersection of a context-free language and a regular language is always a regular language. This is because regular languages are closed under intersection with any other language, including context-free languages.
+
+There are different ways to prove this, but one possible method is to use the fact that context-free languages can be recognized by pushdown automata (PDA), while regular languages can be recognized by finite automata (FA). Given a context-free language LL and a regular language RR, we can construct a PDA and an FA that recognize them, respectively.
+
+Then, we can construct a new PDA that simulates the two automata in parallel, and accepts a string if and only if both automata accept it. This PDA recognizes the intersection LL ∩ RR, and can be transformed into an equivalent FA using the subset construction algorithm. Therefore, LL ∩ RR is a regular language.
+
+43. A finite automaton cannot be in more than one state at any one time is 
+called: 
+ (a) 𝐹SM
+(b) Deterministic Finite Automaton
+(c) Non-deterministic Finite Automaton 
+(d) Regular language
+
+(b) Deterministic Finite Automaton
+
+44. If 𝐴 = (𝑄, Σ, 𝛿, 𝑞0, 𝐹) is an 𝑁FA, the language of an 𝑁FA will be: 
+(a) 𝐿(𝐴) = {𝜔 | 𝛿 ( 𝑞0 , 𝜔) ∩ 𝐹 ≠ ∅}
+(b) 𝐿(𝐴) = {𝜔 | 𝛿 ( 𝑞0 , 𝜔) ∩ 𝐹 = ∅}
+(c) 𝐿(𝐴) = {𝜔 | 𝛿 ( 𝑞0 , 𝜔) ∪ 𝐹 = ∅}
+(d) 𝐿(𝐴) = {𝜔 | 𝛿 ( 𝑞0 , 𝜔) ∪ 𝐹 ≠ ∅} 
+(a) 𝐿(𝐴) = {𝜔 | 𝛿 ( 𝑞0 , 𝜔) ∩ 𝐹 ≠ ∅} is the correct answer.
+
+This means that the language of an 𝑁FA is the set of all strings that can be input to the automaton, resulting in a final state being reached. In other words, the language is the set of all strings that can be accepted by the 𝑁FA.
+
+𝛿 ( 𝑞0 , 𝜔) represents the state that the 𝑁FA will be in after reading the input string 𝜔, starting from the initial state 𝑞0. If this final state intersects with the set of accept states 𝐹, then the input string is accepted by the 𝑁FA and belongs to its language.
+
+Therefore, option (a) is the correct statement of the language of an 𝑁FA.
+
+45. Which one of the following languages are described by Finite Automata?
+(a) Regular language
+(b) Content sensitive language
+(c) Content-free language
+(d) Recursive language
+
+(a) Regular language is described by Finite Automata.
+
+Finite Automata, both Deterministic and Non-deterministic, are used to recognize Regular Languages. Regular languages are a subset of Chomsky's Hierarchy of Languages, which also includes Context-Free Languages, Context-Sensitive Languages, and Recursive Languages.
+
+Content-Sensitive Languages, Content-Free Languages, and Recursive Languages are not recognized by Finite Automata. Content-Sensitive Languages are recognized by Linear Bounded Automata, Content-Free Languages are recognized by Pushdown Automata, and Recursive Languages are recognized by Turing Machines.
+
+46. In order to describe an algorithm for searching an 𝐴ND-𝑂R graph, we need 
+to exploit a value called: 
+(a) Modality
+(b) Mobility
+(c) Futility
+(d) Quality
+
+(b) Mobility is the value that needs to be exploited in order to describe an algorithm for searching an 𝐴ND-𝑂R graph.
+
+An 𝐴ND-𝑂R graph is an And/Or graph, where each node is associated with a set of possible outcomes. When searching such a graph, we need to take into account the mobility value, which represents the number of possible moves that can be made from a given node.
+
+Exploiting the mobility value allows us to determine the best path to take while searching the graph. Algorithms such as Minimax and Alpha-Beta pruning use mobility values to efficiently search an 𝐴ND-𝑂R graph.
+
+Modality, futility, and quality are not directly related to searching an 𝐴ND-𝑂R graph.
+
+47. Most commonly used language for Artificial Intelligence programming is: 
+ (a) 𝐶
+(b) 𝐶++
+(c) 𝐿ISP
+(d) 𝑃ASCAL
+
+The most commonly used language for Artificial Intelligence programming varies depending on the task and the preference of the developer, but currently, the most popular languages for AI programming are Python and R.
+
+Python is a high-level programming language that is easy to learn and has a large number of libraries and frameworks for AI development, including TensorFlow, Keras, PyTorch, and scikit-learn. Python's simplicity and readability make it a popular choice for AI programming.
+
+R is another popular language for AI programming, particularly for statistical analysis and data visualization. R has a wide range of libraries and packages for machine learning and deep learning, such as caret, randomForest, and TensorFlow.
+
+While C and C++ are also used in AI programming, they are not as popular as Python and R due to their lower-level nature and more complex syntax. Lisp and Pascal are not commonly used for AI programming.
+
+48. The process of writing programs that can themselves produce formal 
+descriptions from informal ones is: 
+(a) Optimization
+(b) Feasibility
+(c) Coding
+(d) Operationalization
+
+The process of writing programs that can themselves produce formal descriptions from informal ones is called Operationalization. Therefore, the correct option is (d) Operationalization.
+
+Operationalization is the process of defining a fuzzy concept in such a way that it becomes measurable and can be observed empirically. In computer science, operationalization is often used in the context of programming languages and compilers, where a high-level description of a program is translated into a low-level machine language that can be executed on a computer. The process of operationalization involves specifying the detailed steps and algorithms necessary to perform the desired computation.
+
+49. How well a model trained on the training set predicts the right output for 
+new instances is called: 
+ (a) Specialization
+(b) Generalization
+(c) Modularization
+(d) Optimization
+
+(b) Generalization
+
+50. In polynomial interpolation, given 𝑁 points, we find the (𝑁 − 1)𝑡𝑡ℎ degree 
+polynomial that is used to predict the output for any 𝑋 which is outside of 
+the range of 𝑋𝑡 in the training set is called: 
+(a) Extrapolation
+(b) Interpolation
+(c) Polynomial evaluation
+(d) Friction
+
+(a) Extrapolation
