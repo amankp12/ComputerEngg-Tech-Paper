@@ -985,3 +985,190 @@ Segmentation is a memory management technique where the memory is divided into s
 Paging, on the other hand, is a memory management technique where memory is divided into fixed-size pages, and each page can be assigned to any process or program. Pages are not independent of each other, and they cannot grow or shrink independently.
 
 Framing is a technique where memory is divided into fixed-size frames, and each frame can be assigned to any process or program. Spooling is a technique used to store data temporarily while it is being processed or printed.
+
+67. The purpose of the system call 𝐾ILL used in signal handling is to: 
+(a) Send signal to another process
+(b) Change set of blocked signals, then pause 
+(c) Examine set of blocked signals
+(d) Clean up after signal handler
+The system call kill is used to send a signal to another process. However, the question asks about the system call kill used in signal handling.
+
+In signal handling, the system call kill is not typically used. Instead, the system call kill is often used to send a signal to a process from another process.
+
+The system call kill is not used to change the set of blocked signals or examine the set of blocked signals.
+
+Therefore, option (a) "Send signal to another process" is the correct answer.
+
+68. The most common technique used to reduce the disk accesses in a file 
+system is known as: 
+(a) Buffer cache
+(b) Long-structured file system
+(c) 𝐿FS-cleaner
+(d) Write-through caches 
+(a) Buffer cache is the most common technique used to reduce the disk accesses in a file system.
+
+Buffer cache is a mechanism that stores recently accessed data in memory, allowing for faster access to that data in the future. When a file is accessed, the file system reads a block of data from the disk into the buffer cache. If the file is accessed again, the data can be read directly from the cache instead of having to go to the disk, which can be slower. This technique helps to reduce the number of disk accesses required and improves overall system performance.
+
+Option (b) Long-structured file system and option (c) LFS-cleaner are not common techniques used to reduce disk accesses in a file system. Option (d) Write-through caches are a type of cache used to improve performance in computer systems, but they are not specifically designed to reduce disk accesses in a file system.
+
+69. If the time to transfer a block from the controller to memory over the bus is 
+longer than the time to read a block from the disk, it may be necessary to 
+read one block and then skip two or more blocks is called: 
+(a) Spooling
+(b) Interleaving
+(c) Interlinking
+(d) Data hiding
+
+(b) Interleaving
+
+70. If the process size is 𝑠 bytes and the page size is 𝑝 bytes and assuming that 
+each page entry requires 𝑒 bytes, then the optimum page size is given by: 
+(a) 𝑝 = √2se
+(b) 𝑝𝑝 = 1/2 √2se
+(c) 𝑝 = √se
+(d) 𝑝 = √2s/e
+The optimum page size can be calculated as follows:
+
+Let's assume that there are 𝑁 pages needed to store a process of size 𝑠 bytes, where 𝑁 = 𝑠/𝑝. Each page entry requires 𝑒 bytes. Therefore, the total overhead due to page entries would be 𝑁 × 𝑒 bytes.
+
+The total memory required to store the process and the page entries can be expressed as:
+
+𝑇 = 𝑠 + 𝑁 × 𝑒
+
+Substituting 𝑁 = 𝑠/𝑝, we get:
+
+𝑇 = 𝑠 + 𝑠 × 𝑒/𝑝
+
+Taking the derivative of 𝑇 with respect to 𝑝 and setting it equal to zero to find the minimum value, we get:
+
+d𝑇/d𝑝 = −𝑠 × 𝑒/𝑝^2 = 0
+
+Solving for 𝑝, we get:
+
+𝑝 = √(𝑠 × 𝑒)
+
+Therefore, the optimum page size is given by (c) 𝑝 = √(𝑠 × 𝑒).
+
+71. Which one of the following supports basic OLAP operations, including 
+slice-and-dice, drill-down, roll-up and pivoting? 
+ (a) Information processing
+(b) Analytical processing
+(c) Transaction processing
+(d) Data mining
+(b) Analytical processing supports basic OLAP (Online Analytical Processing) operations, including slice-and-dice, drill-down, roll-up, and pivoting. Analytical processing is a type of data processing that focuses on performing complex analytical operations on data. OLAP is a technology that supports analytical processing by allowing users to perform multidimensional analysis of data, where they can navigate data hierarchies, drill-down into data, slice and dice it, and pivot it in different ways to gain insights.
+
+72. Which one of the following systems is customer-oriented and is used for 
+transaction and query processing by Clerks, Clients and 𝐼T professionals? 
+(a) 𝑂LAP
+(b) 𝑂LTP
+(c) 𝑅OLAP
+(d) HOLAP
+
+The system that is customer-oriented and used for transaction and query processing by Clerks, Clients, and IT professionals is OLTP (Online Transaction Processing). Therefore, option (b) is the correct answer.
+
+(a) OLAP (Online Analytical Processing) is used for analyzing large volumes of data, and it is not customer-oriented.
+(c) ROLAP (Relational Online Analytical Processing) is a type of OLAP system that uses a relational database as the data source.
+(d) HOLAP (Hybrid Online Analytical Processing) is a combination of ROLAP and MOLAP (Multidimensional Online Analytical Processing) systems.
+
+73. In the discretization technique, if the discretization process uses class 
+information then it is: 
+(a) Top-down discretization
+(b) Bottom-up discretization
+(c) Supervised discretization
+(d) Un-supervised discretization
+The answer is (c) Supervised discretization.
+
+In supervised discretization, the discretization process uses class information to group continuous values into discrete intervals or categories. This is done by analyzing the distribution of the continuous attribute values for each class separately and finding the cut points that best separate the classes. The goal is to create intervals that are homogeneous within a class and heterogeneous between classes. This method is often used in classification problems where the goal is to predict the class label of new instances based on the values of the input attributes.
+
+In contrast, unsupervised discretization (option d) does not use class information and relies solely on the distribution of the attribute values to create intervals. Bottom-up discretization (option b) starts with the smallest intervals and combines them into larger intervals, while top-down discretization (option a) starts with the largest interval and recursively splits it into smaller intervals.
+
+74. In which one of the following data transformations the low-level or primitive 
+(raw) data are replaced by higher-level concepts through the use of concept 
+hierarchies? 
+(a) Smoothing
+(b) Aggregation
+(c) Normalization
+(d) Generalization
+The data transformation in which low-level or primitive data is replaced by higher-level concepts through the use of concept hierarchies is called generalization. Therefore, option (d) is the correct answer.
+
+Generalization is a data reduction technique that replaces low-level or detailed data with higher-level or more general concepts. It involves creating a generalized view of the data by identifying common features among similar objects and grouping them together. This technique is commonly used in data mining and data warehousing to simplify the data and make it more manageable for analysis.
+
+75. The database which is partitioned across multiple disks and parallel 
+processing occurs within a specific task that is performed concurrently on 
+different processors against different sets of data, is: 
+(a) Vertical parallelism
+(b) Horizontal parallelism
+(c) Inter-query parallelism
+(d) Intra-query parallelism
+The database which is partitioned across multiple disks and parallel processing occurs within a specific task that is performed concurrently on different processors against different sets of data, is an example of (b) Horizontal parallelism.
+
+Horizontal parallelism involves distributing the workload across multiple processors or nodes, where each node operates on a different subset of the data. In this case, the database is partitioned across multiple disks, and different processors operate on different sets of data in parallel to perform a specific task.
+
+Vertical parallelism, on the other hand, involves breaking down a single task into smaller subtasks that can be executed in parallel across different resources.
+
+Inter-query parallelism involves executing multiple queries in parallel, while intra-query parallelism involves breaking down a single query into smaller subtasks that can be executed in parallel.
+
+76. In a distributed transaction processing system, a transaction should satisfy the properties of:
+(a) 𝑅PC
+(b) 𝐴CID
+(c) Nested transactions
+(d) MOM(Message Oriented Middleware)
+
+In a distributed transaction processing system, a transaction should satisfy the properties of both (a) 𝑅PC and (b) 𝐴CID.
+
+(a) 𝑅PC (Remote Procedure Call) ensures that a distributed transaction behaves as a single, indivisible operation. This means that the transaction must be executed atomically, consistently, and isolatedly across multiple nodes in the system, and that its effects must be durable. 𝑅PC is essential for ensuring that distributed transactions maintain data consistency and integrity across multiple nodes.
+
+(b) 𝐴CID (Atomicity, Consistency, Isolation, Durability) is a set of transaction properties that ensure that a transaction behaves correctly in a distributed system. Atomicity ensures that a transaction is either completed entirely or not at all. Consistency ensures that a transaction brings the system from one valid state to another. Isolation ensures that concurrent transactions do not interfere with each other. Durability ensures that the effects of a transaction are permanent and will survive system failures.
+
+(c) Nested transactions are a way to compose transactions hierarchically. A nested transaction is a transaction that is executed within the scope of another transaction. Nested transactions can be used to build more complex transactions from simpler ones, and can help improve the maintainability of distributed transaction processing systems.
+
+(d) MOM (Message-Oriented Middleware) is a messaging system that provides a way for distributed applications to communicate with each other using messages. While MOM can be used in distributed transaction processing systems, it is not a required property for such systems.
+
+77. The distributed systems containing devices which are often characterized by 
+small, battery-powered, mobile, adopt to contextual changes, encourage 
+ad hoc composition and recognize sharing are called: 
+ (a) Distributed Computing Systems
+(b) Cloud Computing Systems
+(c) Distributed Information Systems
+(d) Distributed Pervasive Systems
+
+(d) Distributed Pervasive Systems
+
+78. Which one of the following architectural styles of distributed systems is 
+based on publish/subscribe systems? 
+ (a) Event-based architectures
+(b) Object-based architectures
+(c) Data-centered architectures
+(d) Layered architectures
+The architectural style of distributed systems based on publish/subscribe systems is:
+
+(a) Event-based architectures
+
+Event-based architectures are based on the idea of publishing events or notifications to a central broker, which then distributes these events to subscribers that have registered their interest in receiving them. This architecture is well-suited for systems that deal with real-time data streams or need to react to events in a timely manner.
+
+Object-based architectures are focused on defining objects that can be accessed remotely, while data-centered architectures focus on storing data in a distributed manner. Layered architectures are a way to organize a system into layers of functionality, with each layer responsible for a different aspect of the system's operation. None of these architectures are based on publish/subscribe systems.
+
+79. In a decentralized distributed system architecture where the tables of 
+distributed relational databases, are split column-wise and distributed across 
+multiple machines, is called: 
+ (a) Horizontal distribution
+(b) Overlay distribution
+(c) Three-tiered distribution
+(d) Vertical distribution
+The correct answer is (d) Vertical distribution.
+
+In a decentralized distributed system architecture, where the tables of distributed relational databases are split column-wise and distributed across multiple machines, it is called vertical distribution. Vertical distribution, also known as column-wise partitioning or sharding, is a technique used in distributed database systems to horizontally partition data based on column values. This helps distribute the data evenly across multiple nodes, and allows for more efficient querying and processing of data.
+
+Horizontal distribution (a) refers to partitioning data based on rows, overlay distribution (b) is a technique used to distribute data over a network of nodes, and three-tiered distribution (c) refers to a specific architecture where the system is divided into three tiers: presentation tier, application tier, and database tier.
+
+80. In a distributed system, the interface suitable for development work in high performance server clusters and can handle more advanced features of 
+buffering and synchronization is: 
+(a) RPC (Remote Procedure Call)
+(b) Berkeley Socket Interface
+(c) 𝑋TI (Open Transport Interface)
+(d) 𝑀PI (Message-Passing Interface)
+The interface suitable for development work in high-performance server clusters and can handle more advanced features of buffering and synchronization is:
+
+(d) MPI (Message-Passing Interface)
+
+MPI is a standardized message-passing system that enables the development of parallel applications that can run on a wide range of distributed computing platforms, including high-performance server clusters. It provides a flexible and efficient communication interface that can handle advanced features such as buffering and synchronization, making it a popular choice for developing parallel and distributed computing applications. RPC and Berkeley Socket Interface are other communication interfaces that can be used in distributed systems, but they are not specifically designed for high-performance server clusters or advanced features such as buffering and synchronization. XTI (Open Transport Interface) is a legacy networking interface that is no longer widely used.
