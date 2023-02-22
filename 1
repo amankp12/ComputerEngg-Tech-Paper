@@ -903,3 +903,85 @@ In OFB mode, the encryption process involves generating a stream of key bits, wh
 One of the advantages of using OFB mode is that errors in transmission only affect the corresponding ciphertext block, rather than propagating to subsequent blocks. This makes OFB mode particularly useful in noisy channel environments, where errors and dropouts are common.
 
 Therefore, the correct answer is (b) Output Feedback.
+
+60. A popular approach to generating a secure pseudorandom number is known 
+as: 
+(a) Pseudorandom Number Generator (PRNG) 
+(b) Linear Congruential Generator (𝐿CG) 
+(c) True Random Number Generator (𝑇RNG)
+(d) Blum, Blum, Shub Generator (𝐵BS)
+The correct answer is (a) Pseudorandom Number Generator (PRNG).
+
+A pseudorandom number generator (PRNG) is a mathematical algorithm that generates a sequence of numbers that appear to be random, but are actually determined by a deterministic computation. PRNGs are widely used in cryptography, simulations, and other applications where random numbers are needed.
+
+While PRNGs are not truly random, they are designed to be difficult to predict, and the quality of the randomness depends on the quality of the algorithm and the seed value used to initiate the sequence. There are various types of PRNGs, including linear congruential generators (LCGs), Blum, Blum, Shub generators (BBS), and others.
+
+True Random Number Generators (TRNGs), on the other hand, generate random numbers using physical processes that are believed to be truly random, such as atmospheric noise or radioactive decay. However, TRNGs can be expensive to implement and may not be practical in all situations.
+
+61. The effective and well established technique to catch inconsistency in 
+programs is called: 
+ (a) Type checking
+(b) Error checking
+(c) Type casting 
+(d) Bounds checking
+
+The effective and well-established technique to catch inconsistency in programs is called "Type checking."
+
+62. The category of software maintenance which fixes errors in the original system design and implementation is:
+(a) Perfective maintenance
+(b) Adaptive maintenance
+(c) Corrective maintenance
+(d) Software maintenance
+
+The category of software maintenance which fixes errors in the original system design and implementation is Corrective maintenance. This type of maintenance involves diagnosing and fixing problems discovered in the software after it has been deployed. Corrective maintenance is aimed at correcting defects, faults, or bugs that are discovered in the software during its use. This type of maintenance is essential to keep the software working properly and to ensure that it meets the user's requirements.
+
+Perfective maintenance involves improving or enhancing the software's functionality or performance, while adaptive maintenance involves modifying the software to accommodate changes in its environment or to meet new user requirements.
+
+Overall, software maintenance refers to the ongoing process of managing and updating software to ensure that it remains useful, reliable, and efficient throughout its life cycle.
+
+63. Which one of the following techniques can be used for implementing 
+different type of Virtual memory? 
+ (a) Segmentation
+(b) Fragmentation
+(c) Reassembly
+(d) Reallocation
+(a) Segmentation is a technique that can be used for implementing different types of virtual memory.
+
+Segmentation is a memory management technique where memory is divided into variable-sized segments or chunks. Each segment corresponds to a logical division of the program, such as code, data, or stack. When a program is loaded into memory, the memory management unit (MMU) maps the logical addresses used by the program to physical addresses in memory. Segmentation can support virtual memory by allowing the MMU to swap segments in and out of memory as needed, thereby increasing the effective size of the address space beyond the physical memory available.
+
+Fragmentation, reassembly, and reallocation are not techniques used for implementing virtual memory. Fragmentation refers to the phenomenon where memory becomes fragmented over time due to allocations and deallocations, resulting in small unusable blocks of memory. Reassembly refers to the process of assembling fragmented data into a coherent whole, which is typically done in networking. Reallocation refers to the process of reallocating memory to a different task or process in a multitasking operating system.
+
+64. Which one of the following register is updated during instruction execution 
+to point to the next instruction byte to be fetched? 
+(a) Stack pointer
+(b) Frame pointer
+(c) Program counter
+(d) Argument pointer
+
+(c) Program counter is updated during instruction execution to point to the next instruction byte to be fetched. The program counter is a register in the CPU that keeps track of the memory address of the next instruction to be executed. When an instruction is fetched from memory, the program counter is incremented to point to the next instruction in memory. This process continues until the program ends or encounters a branch or jump instruction that modifies the program counter.
+
+65. A policy that only allows a decision to be made when we execute the 
+program is said to be: 
+(a) Static policy
+(b) Dynamic policy
+(c) Constant policy
+(d) Random policy
+
+(b) Dynamic policy.
+
+A policy that only allows a decision to be made when we execute the program is known as a dynamic policy. In a dynamic policy, the decision-making process is deferred until runtime, rather than being determined at compile time. This allows for greater flexibility and adaptability in response to changing conditions or input. In contrast, a static policy would determine decisions at compile time and would not be able to adapt to changing conditions during runtime.
+
+66. A general solution for the machine with many completely independent 
+address spaces which can grow or shrink independently, without affecting 
+each other? 
+(a) Paging
+(b) Segmentation
+(c) Framing
+(d) Spooling
+The general solution for a machine with many completely independent address spaces that can grow or shrink independently without affecting each other is Segmentation.
+
+Segmentation is a memory management technique where the memory is divided into segments, and each segment is assigned to a specific process or program. Each segment is independent of other segments, and they can grow or shrink independently without affecting each other.
+
+Paging, on the other hand, is a memory management technique where memory is divided into fixed-size pages, and each page can be assigned to any process or program. Pages are not independent of each other, and they cannot grow or shrink independently.
+
+Framing is a technique where memory is divided into fixed-size frames, and each frame can be assigned to any process or program. Spooling is a technique used to store data temporarily while it is being processed or printed.
